@@ -95,7 +95,7 @@ public class DataframeUnionApp {
         df.col("datasetId")));
 
     // I left the following line if you want to play with repartitioning
-    // df = df.repartition(4);
+    df = df.repartition(4);
 
     return df;
   }
